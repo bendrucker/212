@@ -1,7 +1,7 @@
 {
   "name": "212",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Functional/composable boilerplate generator for scaffolding modules",
   "license": "MIT",
   "repository": "bendrucker/212",
