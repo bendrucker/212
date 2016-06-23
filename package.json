@@ -1,0 +1,46 @@
+{
+  "name": "212",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Functional/composable boilerplate generator for scaffolding modules",
+  "license": "MIT",
+  "repository": "bendrucker/212",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js | tap-difflet"
+  },
+  "keywords": [
+    "boilerplate",
+    "code",
+    "init",
+    "npm",
+    "module",
+    "package"
+  ],
+  "devDependencies": {
+    "call-method": "~1.0.1",
+    "proxyquire": "~1.7.9",
+    "redent": "~1.0.0",
+    "standard": "^7.0.0",
+    "tap-difflet": "~0.6.0",
+    "tape": "^4.0.0",
+    "trim-newlines": "~1.0.0",
+    "value-pipe": "~1.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ],
+  "dependencies": {
+    "ap": "~0.2.0",
+    "fn-unary": "~1.0.0",
+    "js-yaml": "~3.6.1",
+    "map-values": "~1.0.1",
+    "run-parallel": "~1.1.6",
+    "xtend": "~4.0.1"
+  }
+}
