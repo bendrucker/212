@@ -13,31 +13,69 @@ $ npm install --save 212
 ## Usage
 
 ```js
-var 212 = require('212')
+var Boilerplate = require('212')
+var boilerplate = Boilerplate({
+  'package.json': function (data) {
+    return {
+      name: data.name,
+      version: '0.0.0'
+    }
+  },
+  '.travis.yml': function (data) {
+    return {
+      langugage: 'node_js',
+      node_js: ['6']
+    }
+  }
+})
 
-212('input')
-//=> output
+boilerplate({name: 'my-great-package'}, function (err) {
+  // Writes package.json, .travis.yml
+})
 ```
 
 ## API
 
-#### `212(input, [options])` -> `output`
+#### `Boilerplate(files)` -> `function`
 
-##### input
+Returns a `boilerplate` function that can be called to write the configured boilerplate output.
+
+##### files
 
 *Required*  
-Type: `string`
+Type: `object`
 
-Lorem ipsum.
+An object containing key/value pairs of filenames and values. Values can either be:
 
-##### options
+* A function that returns the file's data
+* An array that will be joined with newlines
+* Any other plain value type
 
-###### foo
+Files with `.json` or `.yml` extensions will be automatically formatted. All other values will be stringified.
 
-Type: `boolean`  
-Default: `false`
+#### `boilerplate(data, [options], callback` -> `undefined`
 
-Lorem ipsum.
+###### data
+
+*Required*  
+Type: `object`
+
+Data to pass to file generator functions.
+
+###### options
+
+###### cwd
+
+Type: `string`  
+Default: `process.cwd()`
+
+The working directory to write boilerplate files to.
+
+##### callback
+
+*Required*  
+Type: `function`  
+Arguments: `err` 
 
 
 ## License
