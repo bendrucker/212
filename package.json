@@ -24,9 +24,9 @@
   "devDependencies": {
     "call-method": "~1.0.1",
     "proxyquire": "~1.7.9",
-    "redent": "~1.0.0",
-    "standard": "^7.0.0",
-    "tap-difflet": "~0.6.0",
+    "redent": "~2.0.0",
+    "standard": "^8.5.0",
+    "tap-difflet": "~0.7.0",
     "tape": "^4.0.0",
     "trim-newlines": "~1.0.0",
     "value-pipe": "~1.0.0"
