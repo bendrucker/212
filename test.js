@@ -17,7 +17,7 @@ test(function (t) {
   const Generator = proxyquire('./', {
     fs: {
       writeFile: function (file, content, callback) {
-        files.push({path: file, content: content})
+        files.push({ path: file, content: content })
         callback(null)
       }
     }
@@ -42,7 +42,7 @@ test(function (t) {
     '.gitattributes': '* text=auto'
   })
 
-  generate({name: 'my-pkg'}, {cwd: path.resolve(__dirname, 'foo')}, function (err) {
+  generate({ name: 'my-pkg' }, { cwd: path.resolve(__dirname, 'foo') }, function (err) {
     if (err) return t.end(err)
     t.deepEqual(files, [
       {

@@ -1,4 +1,4 @@
-# 212 [![Build Status](https://travis-ci.org/bendrucker/212.svg?branch=master)](https://travis-ci.org/bendrucker/212)
+# 212 [![Build Status](https://travis-ci.org/bendrucker/212.svg?branch=master)](https://travis-ci.org/bendrucker/212) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/212.svg)](https://greenkeeper.io/)
 
 > Functional/composable boilerplate generator for scaffolding modules
 
