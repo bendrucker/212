@@ -38,7 +38,7 @@
   "dependencies": {
     "ap": "~0.2.0",
     "fn-unary": "~1.0.0",
-    "js-yaml": "~3.12.0",
+    "js-yaml": "~3.13.0",
     "map-values": "~1.0.1",
     "run-parallel": "~1.1.6",
     "xtend": "~4.0.1"
